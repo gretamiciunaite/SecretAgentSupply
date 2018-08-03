@@ -70,6 +70,9 @@ nav ul {
   padding: 0.75rem 0;
 }
 
+.mobile-nav {
+  display: none;
+}
 
 .business-info {
   display: flex;
@@ -125,4 +128,75 @@ nav ul {
   padding: 5rem 0;
   margin-top: 4rem;
   text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .product {
+    width: 47%;
+  }
+  .info {
+    width: 35%;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  ul.container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  body {
+    font-size: 16px;
+  }
+  .product {
+    width: 90%;
+  }
+  .info {
+    width: 90%;
+    flex-direction: column;
+  }
+  .product.watch {
+    display: none;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .main-banner {
+    height: 15rem;
+  }
+  .headline h4 {
+    font-family: helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+  .headline h1 {
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  ul.container {
+    display: none;
+  }
+
+.footer {
+  text-align: center;
+}
+
 }
